@@ -1,0 +1,33 @@
+body {
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+}
+header {
+    border: 5px black solid;
+}
+.ideas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ideaCard {
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+    border: 2px black solid;
+}
+.category {
+    padding: 50px;
+}
+.funTechFree {
+    border: 5px black solid;
+}
+.funTechy {
+    border: 5px black solid;
+}
+.romanticTechFree {
+    border: 5px black solid;
+}
+.romanticTechy {
+    border: 5px black solid;
+}
