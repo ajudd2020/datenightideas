@@ -4,6 +4,13 @@ body {
 }
 header {
     border: 5px black solid;
+    background: url(../images/sparkles-background.jpg);
+}
+.headerContent {
+    border: 2px black solid;
+    background-color: rgba(61, 3, 61, 0.5);
+    color: #E3EBFF;
+    padding: 50px;
 }
 .ideas {
     display: flex;
@@ -11,15 +18,21 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
+.ideasBackground {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
 .ideaCard {
     height: 300px;
     width: 200px;
     margin:20px;
     border: 2px black solid;
     position: relative;
+    border-radius: 15%;
 }
 .ideaCard img {
-    height: 100%;
+    width: 100%;
+    border-radius: 15%;
 }
 /*.ideaCard h5 {
     margin-top: 60px;
@@ -28,35 +41,34 @@ header {
 .ideaName {
     color: white;
     position: absolute;
-    font-size: 40px;
     top: 20%;
     left: 30%;
 }
-.ideaName h5 {
+.ideaName h2 {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 5px;
 }
-.category {
+/*.category {
     padding: 50px;
+}*/
+.category h1 {
+    padding: 0px;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-.funTechFree {
-    background-color: #512D38;
-    color:#FFE9F3;
+.category h2 {
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.techFree {
+    background-color: #623cea;
+    color:white;
     border: 5px black solid;
 }
-.funTechy {
-    background-color: #87bAAb;
-    color:#512D38;
-    border: 5px black solid;
-}
-.romanticTechFree {
-    background-color: #512D38;
-    color:#FFE9F3;
-    border: 5px black solid;
-}
-.romanticTechy {
-    background-color: #87baab;
-    color:#512D38;
+.techy {
+    background: rgb(31,128,237);
+    background: linear-gradient(90deg, rgba(31,128,237,1) 0%, rgba(94,122,222,1) 51%, rgba(0,212,255,1) 100%);
+    color:white;
     border: 5px black solid;
 }
 
