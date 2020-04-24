@@ -1,18 +1,99 @@
 body {
-    margin: 0px 50px 0px 50px;
+    /*margin: 0px 50px 0px 50px;*/
     text-align: center;
 }
+
 header {
-    border: 5px black solid;
     background: url(../images/sparkles-background.jpg);
 }
+
 .headerContent {
-    border: 2px black solid;
-    background-color: rgba(61, 3, 61, 0.5);
+    background-color: rgba(61, 3, 61, 0.6);
     color: #E3EBFF;
     padding: 50px;
 }
-.ideas {
+
+.flipCardFlex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+} 
+
+.flipCard {
+    background-color: transparent;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.ideaCard {
+    border-radius: 15%;
+}
+.ideaCard img {
+    border-radius: 15%;
+}
+
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15%;
+}
+  
+.flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+}
+  
+.flipCardFront, .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flipCardFront {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flipCardBack {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+h1 {
+    padding: 0px;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.fun {
+    background-color: #623cea;
+    color:white;
+    border: 1px white solid;
+}
+
+.romantic {
+    background: rgb(31,128,237);
+    background: linear-gradient(90deg, rgba(31,128,237,1) 0%, rgba(94,122,222,1) 51%, rgba(0,212,255,1) 100%);
+    color:white;
+    border: 1px white solid;
+}
+
+/*.ideas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +102,29 @@ header {
 .ideasBackground {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
+}
+.flipCard {
+    height: 300px;
+    width: 200px;
+    perspective: 1000px;
+}
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+}
+.flipCardFront, .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
 }
 .ideaCard {
     height: 300px;
@@ -37,7 +141,7 @@ header {
 /*.ideaCard h5 {
     margin-top: 60px;
     font-size: 20px;
-}*/
+}
 .ideaName {
     color: white;
     position: absolute;
@@ -51,24 +155,4 @@ header {
 /*.category {
     padding: 50px;
 }*/
-.category h1 {
-    padding: 0px;
-    font-size: 60px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.category h2 {
-    font-size: 40px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.techFree {
-    background-color: #623cea;
-    color:white;
-    border: 5px black solid;
-}
-.techy {
-    background: rgb(31,128,237);
-    background: linear-gradient(90deg, rgba(31,128,237,1) 0%, rgba(94,122,222,1) 51%, rgba(0,212,255,1) 100%);
-    color:white;
-    border: 5px black solid;
-}
 
