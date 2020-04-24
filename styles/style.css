@@ -9,17 +9,32 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .ideaCard {
-    height: 200px;
-    width: 150px;
-    margin-right: 2px;
-    margin-left: 2px;
+    height: 300px;
+    width: 200px;
+    margin:20px;
     border: 2px black solid;
+    position: relative;
 }
-.ideaCard h5 {
+.ideaCard img {
+    height: 100%;
+}
+/*.ideaCard h5 {
     margin-top: 60px;
     font-size: 20px;
+}*/
+.ideaName {
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    top: 20%;
+    left: 30%;
+}
+.ideaName h5 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
 }
 .category {
     padding: 50px;
@@ -44,15 +59,4 @@ header {
     color:#512D38;
     border: 5px black solid;
 }
-@media only screen and (min-width: 720px) {
-    .ideaCard {
-        height: 300px;
-        width: 200px;
-        margin: 20px;
-        border: 2px black solid;
-    }
-    .ideaCard h5 {
-        margin-top: 100px;
-        font-size: 40px;
-    }
-}
+
