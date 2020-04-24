@@ -11,23 +11,48 @@ header {
     align-items: center;
 }
 .ideaCard {
-    height: 300px;
-    width: 200px;
-    margin: 20px;
+    height: 200px;
+    width: 150px;
+    margin-right: 2px;
+    margin-left: 2px;
     border: 2px black solid;
+}
+.ideaCard h5 {
+    margin-top: 60px;
+    font-size: 20px;
 }
 .category {
     padding: 50px;
 }
 .funTechFree {
+    background-color: #512D38;
+    color:#FFE9F3;
     border: 5px black solid;
 }
 .funTechy {
+    background-color: #87bAAb;
+    color:#512D38;
     border: 5px black solid;
 }
 .romanticTechFree {
+    background-color: #512D38;
+    color:#FFE9F3;
     border: 5px black solid;
 }
 .romanticTechy {
+    background-color: #87baab;
+    color:#512D38;
     border: 5px black solid;
+}
+@media only screen and (min-width: 720px) {
+    .ideaCard {
+        height: 300px;
+        width: 200px;
+        margin: 20px;
+        border: 2px black solid;
+    }
+    .ideaCard h5 {
+        margin-top: 100px;
+        font-size: 40px;
+    }
 }
