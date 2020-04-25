@@ -22,38 +22,28 @@
                 </ul>
             </div>
           </nav>
-        <div class="headerContent" id="Home">
-            <div class="headerContentInside">
-                <h1>Quarantine Date Night Ideas</h1>
-                <h3>The idea of this page is...</h3>
-                <div class="headerP">
-                    <p>
-                        That you're desperate and bored enough from being stuck in lockdown for weeks that you've resorted to the internet for entertainment ideas.
-                    </p>
-                    <p>
-                        Well, you've come to the right place! 
-                    </p>
-                    <p>
-                        There's one catch. If you're going to use these date nigth ideas, you have to follow the rules.
-                    </p>
-                    <h2>The Rules:</h2>
-                    <p>
-                        Whatever date you pick, you have to complete
-                    </p>
-                    <p>
-                        If you hate it, you have to send a message with a recommendation to improve it
-                    </p>
-                    <p>
-                        If you love it, you can feel free to thank me with a comment, as well.
-                    </p>
-                    <p>
-                        Remember: If you click it, you pick it!
-                    </p>
+        <main class="contactMain">
+            <h1>Contact Me!</h1>
+            <form action="https://formspree.io/xknvdavn" method="POST">
+                <label for="name">Name:
+                    <input type="text" name="name" id="name" placeholder="Name" required="required">
+                </label>
+                <label for="email">E-mail:
+                    <input type="email" name="email" id="email" placeholder="email@email.com" required="required">
+                </label>
+                <div class="whyContact">
+                    <h3>What would you like to tell me?</h3>
+                    <label for="positive"><input type="radio" name="reason" id="positive" value="positive" /> Good things!</label>
+                    <label for="negative"><input type="radio" name="reason" id="negative" value="negative" /> I have some recommendations.</label>
+                    <label for="neutral"><input type="radio" name="reason" id="neutral" value="neutral" /> Just wanted to say "hi!"</label>
                 </div>
-                <!--BUTTON FOR "LET'S GO!"-->
-                <a href="date_ideas.html" class="openButton">Let's go!</a>
-            </div>
-        </div>
+                <h3>Just so you know...</h3>
+                <textarea name="comment" id="comment" rows="15" cols="50" placeholder="I'm writing to let you know that..."></textarea>
+                <div class="submitButton">
+                    <input type="submit" value="Submit" class="submit" />
+                </div>
+            </form>
+        </main>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -2,14 +2,23 @@
     box-sizing: content-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: #E3EBFF;
 }
 
- nav a {
+nav a {
     box-sizing: border-box;
     font-family: "Indie Flower";
+}
+
+.bg-navbar {
+    background-color: #E3EBFF;
 }
 
 @font-face {
@@ -22,24 +31,49 @@ body {
     src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
 }
 
-header {
+.headerContent {
     background: url(../images/sparkles-background.jpg);
 }
 
-.headerContent {
+.headerContentInside {
+    border: 10px black solid;
     background-color: rgba(61, 3, 61, 0.6);
     color: #E3EBFF;
+    font-family: "Raleway Bold";
+    min-height: 500px;
     padding: 100px;
-    font-family: "Raleway Bold"
 }
 
-.headerContent p {
+.headerP {
+    margin-bottom: 50px;
     font-size: 20px;
 }
 
+.openButton {
+    padding: 15px;
+    border-radius: 45%;
+    font-family: "Indie Flower";
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border: 3px black solid;
+}
+
+.openButton:hover {
+    text-decoration: none;
+    color: #623cea;
+}
 .top > h1 {
+    padding-top: 60px;
     font-family: "Indie Flower";
     font-size: 60px;
+    color: white;
+}
+.top > h2 {
+    font-family: "Indie Flower";
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: white;
 }
 
 .top {
@@ -110,4 +144,30 @@ header {
     background: linear-gradient(90deg, rgba(31,128,237,1) 0%, rgba(94,122,222,1) 51%, rgba(0,212,255,1) 100%);
     color: white;
     transform: rotateY(180deg);
+}
+.contactMain {
+    padding-top: 70px;
+}
+.whyContact {
+    padding-top: 10px; 
+}
+
+.whyContact > label {
+    padding: 5px;
+}
+
+form h3 {
+    padding: 5px;
+}
+
+.submitButton {
+    margin: 10px;
+}
+
+.submit {
+    background-color: black;
+    color: rgb(247, 181, 247);
+    border-radius: 40%;
+    padding: 5px;
+    border: 2px black solid;
 }
