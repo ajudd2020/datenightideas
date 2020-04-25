@@ -6,8 +6,42 @@
         <link rel="stylesheet" href="styles/style.css" />
     </head>
     <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#Home">Quarantine Date Ideas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Fun Dates
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#funTechFree">Tech-Free</a>
+                    <a class="dropdown-item" href="#funTechy">Techy</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Romantic Dates
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#romanticTechFree">Tech-Free</a>
+                      <a class="dropdown-item" href="#romanticTechy">Techy</a>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </nav>
         <header>
-            <div class="headerContent">
+            <div class="headerContent" id="Home">
                 <h1>Quarantine Date Night Ideas</h1>
                 <h3>The idea of this page is...</h3>
                 <p>
@@ -35,170 +69,172 @@
                 <!--BUTTON FOR "LET'S GO!"-->
             </div>
         </header>
-        <div class="top">
-            <h1>Fun</h1>
-            <h1>Tech-Free</h1>
-        </div>
-        <div class="funTechFree box">
-            <div class="flipCardFlex">
-                <!--Card 1 Test-->
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
+        <main>
+            <div class="top">
+                <h1 id="funTechFree">Fun</h1>
+                <h1>Tech-Free</h1>
+            </div>
+            <div class="funTechFree box">
+                <div class="flipCardFlex">
+                    <!--Card 1 Test-->
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
+                    </div>   
+                    <!--Card 2 Test-->  
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                    </div>
-                </div>   
-                <!--Card 2 Test-->  
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
+                    </div>   
+                    <!--Card 3 Test-->
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
+                    </div>  
+                </div> 
+            </div>
+            <div class="top">
+                <h1 id="funTechy">Fun</h1>
+                <h1>Techy</h1>
+            </div>
+            <div class="funTechy box">
+                <div class="flipCardFlex">
+                    <!--Card 1 Test-->
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                    </div>
-                </div>   
-                <!--Card 3 Test-->
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
+                    </div>   
+                    <!--Card 2 Test-->  
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
+                    </div>   
+                    <!--Card 3 Test-->
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                    </div>
-                </div>  
-            </div> 
-        </div>
-        <div class="top">
-            <h1>Fun</h1>
-            <h1>Techy</h1>
-        </div>
-        <div class="funTechy box">
-            <div class="flipCardFlex">
-                <!--Card 1 Test-->
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
+                    </div>  
+                </div> 
+            </div>
+            <div class="top">
+                <h1 id="romanticTechFree">Romantic</h1>
+                <h1>Tech-Free</h1>
+            </div>
+            <div class="romanticTechFree box">
+                <div class="flipCardFlex">
+                    <!--Card 1 Test-->
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
+                    </div>   
+                    <!--Card 2 Test-->  
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                    </div>
-                </div>   
-                <!--Card 2 Test-->  
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
+                    </div>   
+                    <!--Card 3 Test-->
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
+                    </div>  
+                </div> 
+            </div>
+            <div class="top">
+                <h1 id="romanticTechy">Romantic</h1>
+                <h1>Techy</h1>
+            </div>
+            <div class="romanticTechy box">
+                <div class="flipCardFlex">
+                    <!--Card 1 Test-->
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                    </div>
-                </div>   
-                <!--Card 3 Test-->
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
+                    </div>   
+                    <!--Card 2 Test-->  
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
+                    </div>   
+                    <!--Card 3 Test-->
+                    <div class="flipCard">
+                        <div class="flipCardInner">
+                            <div class="ideaCard flipCardFront">
+                                <img src="images/sparkles.png" />
+                            </div>
+                            <div class="ideaCard flipCardBack">
+                                <h1>TEST TEXT</h1>
+                            </div>
                         </div>
-                    </div>
-                </div>  
-            </div> 
-        </div>
-        <div class="top">
-            <h1>Romantic</h1>
-            <h1>Tech-Free</h1>
-        </div>
-        <div class="romanticTechFree box">
-            <div class="flipCardFlex">
-                <!--Card 1 Test-->
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
-                        </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
-                        </div>
-                    </div>
-                </div>   
-                <!--Card 2 Test-->  
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
-                        </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
-                        </div>
-                    </div>
-                </div>   
-                <!--Card 3 Test-->
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
-                        </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
-                        </div>
-                    </div>
-                </div>  
-            </div> 
-        </div>
-        <div class="top">
-            <h1>Romantic</h1>
-            <h1>Techy</h1>
-        </div>
-        <div class="romanticTechy box">
-            <div class="flipCardFlex">
-                <!--Card 1 Test-->
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
-                        </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
-                        </div>
-                    </div>
-                </div>   
-                <!--Card 2 Test-->  
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
-                        </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
-                        </div>
-                    </div>
-                </div>   
-                <!--Card 3 Test-->
-                <div class="flipCard">
-                    <div class="flipCardInner">
-                        <div class="ideaCard flipCardFront">
-                            <img src="images/sparkles.png" />
-                        </div>
-                        <div class="ideaCard flipCardBack">
-                            <h1>TEST TEXT</h1>
-                        </div>
-                    </div>
-                </div>  
-            </div> 
-        </div>
+                    </div>  
+                </div> 
+            </div>
+        </main>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
