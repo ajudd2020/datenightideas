@@ -12,6 +12,10 @@ body {
     background-color: #E3EBFF;
 }
 
+footer {
+    text-align: left;
+}
+
 nav a {
     box-sizing: border-box;
     font-family: "Indie Flower";
